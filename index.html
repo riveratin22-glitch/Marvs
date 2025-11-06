@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marvin C. Rivera — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;background:linear-gradient(180deg,#071028 0%, #071822 100%);color:#e6eef6}
+    .container{max-width:980px;margin:32px auto;padding:28px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--accent)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    nav{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    a.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:26px}
+    @media(max-width:920px){main{grid-template-columns:1fr} .container{padding:18px}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.035)}
+    section + section{margin-top:18px}
+    .section-title{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
+    .experience-item{margin-bottom:12px}
+    .exp-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .role{font-weight:700}
+    .period{color:var(--muted);font-size:13px}
+    ul.skills{list-style:none;padding:0;margin:6px 0 0 0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px}
+    .ai-icons{display:flex;gap:10px;margin-top:12px}
+    .ai-icons img{width:40px;height:40px;border-radius:8px;transition:transform .2s ease, box-shadow .2s ease}
+    .ai-icons img:hover{transform:scale(1.1);box-shadow:0 0 10px rgba(255,255,255,0.2)}
+    .contact a{display:inline-block;margin-right:8px;color:var(--muted);text-decoration:none}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    .download{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:#071022;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="marvin-photo.jpg" alt="Marvin Rivera portrait">
+      </div>
+      <div>
+        <h1>Marvin C. Rivera</h1>
+        <p class="lead">Social Media Manager • Content Creator • IT & Web Application Specialist</p>
+        <p class="lead">Marikina City, Philippines • <a href="tel:+639079119175" style="color:inherit;text-decoration:none">+63 907 911 9175</a> • <a href="mailto:rivera.tin22@gmail.com" style="color:inherit">rivera.tin22@gmail.com</a></p>
+        <nav>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#experience">Experience</a>
+          <a class="btn" href="#skills">Skills</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section id="about" class="card">
+          <div class="section-title">About</div>
+          <p>Creative and technically-minded professional with experience in social media strategy, AI-powered content creation, and IT support. Skilled at building engaging educational content, troubleshooting web applications, and supporting cross-functional teams to deliver reliable digital experiences.</p>
+          <a class="download" href="Resume2025b.pdf" download>Download Resume</a>
+        </section>
+
+        <section id="experience" class="card">
+          <div class="section-title">Work Experience</div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">Social Media Manager / Content Creator — Imagine Education</div>
+                <div style="color:var(--muted);font-size:13px">Jul 2025 – Oct 2025</div>
+              </div>
+            </div>
+            <ul>
+              <li>Produced AI-assisted visuals, scripts, and videos aligned with educational objectives.</li>
+              <li>Managed content calendars, platform-specific assets, and advertising campaigns.</li>
+              <li>Handled multiple campus accounts while ensuring consistent brand voice.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">IT Specialist — IQVIA</div>
+                <div style="color:var(--muted);font-size:13px">Oct 2023 – Jul 2025</div>
+              </div>
+              <div class="period">Level 2 support, SQL/Postgre, UAT, Zendesk/JIRA</div>
+            </div>
+            <ul>
+              <li>Monitored ticketing systems and provided specialized tenant support.</li>
+              <li>Conducted UAT, report generation and bug replication for production releases.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">Web Application Specialist — Dash10 Services</div>
+                <div style="color:var(--muted);font-size:13px">May 2022 – Oct 2023</div>
+              </div>
+              <div class="period">Client support, bug reproduction, Zoho/CRM</div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">Technical Support SME — Quantrics Enterprise</div>
+                <div style="color:var(--muted);font-size:13px">Jun 2019 – May 2022</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">Customer Bank Consultant — Concentrix Dashk</div>
+                <div style="color:var(--muted);font-size:13px">Mar 2017 – Jun 2019</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <div>
+                <div class="role">IT / Tier 2 Technical Support — EGS / Alorica</div>
+                <div style="color:var(--muted);font-size:13px">Feb 2015 – Feb 2017</div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="education" class="card">
+          <div class="section-title">Education</div>
+          <p><strong>BSIT</strong> — Technological Institute of the Philippines (2012–2015)</p>
+          <p><strong>Parang High School</strong> — (2005–2009)</p>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <ul class="skills">
+            <li>Social Media Strategy</li>
+            <li>AI Content Tools</li>
+            <li>Video & Reels</li>
+            <li>SQL / Postgre</li>
+            <li>Zendesk / JIRA</li>
+            <li>HTML / CSS / PHP</li>
+          </ul>
+
+          <div class="ai-icons">
+            <img src="chatgpt.PNG" alt="ChatGPT logo" title="ChatGPT">
+            <img src="gemini.PNG" alt="Gemini logo" title="Gemini">
+          </div>
+
+          <section id="contact" style="margin-top:14px">
+            <div class="section-title">Contact</div>
+            <p class="contact">Email: <a href="mailto:rivera.tin22@gmail.com">rivera.tin22@gmail.com</a><br>Phone: <a href="tel:+639079119175">+63 907 911 9175</a></p>
+          </section>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built with ♥ — Marvin C. Rivera • Last updated: Nov 7, 2025
+    </footer>
+  </div>
+</body>
+</html>
